@@ -1,0 +1,15 @@
+/*
+ * hello-world.c
+ *
+ *  Created on: 23-Jul-2017
+ *      Author: shreyashpatodia
+ */
+#include<stdio.h>
+
+int main(int argc, char **argv) {
+	printf("Good Morning");
+	return 0;
+
+}
+
+

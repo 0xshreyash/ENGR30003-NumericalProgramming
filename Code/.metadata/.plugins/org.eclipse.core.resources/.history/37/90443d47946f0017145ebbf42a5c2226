@@ -1,0 +1,15 @@
+/*
+ * static-array.c
+ *
+ *  Created on: 23-Jul-2017
+ *      Author: shreyashpatodia
+ */
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+int main(int argc, char **argv) {
+	FILE *fp = fopen("static-data.txt", "r");
+	return 0;
+}
+

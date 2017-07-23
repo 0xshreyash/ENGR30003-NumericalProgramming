@@ -1,0 +1,40 @@
+/*
+ * static-array.c
+ *
+ *  Created on: 23-Jul-2017
+ *      Author: shreyashpatodia
+ */
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+int main(int argc, char **argv) {
+	int size;
+	FILE *fp = fopen("dynamic-2.txt", "r");
+	fscanf(fp, "%d",  &size);
+	int sum = 0;
+	int *arr = (int *)malloc(sizeof(int) * size);
+	for(int i = 0; i < size; i++) {
+		fscanf(fp, "%d", &arr[i]);
+		sum += arr[i];
+	}
+	fclose(fp);
+	// Finding the mean
+	double mean = (sum * 1.0)/size;
+
+	// Finding the variance
+	double var = 0;
+	for(int i = 0; i < size; i++) {
+		var += pow(arr[i] - mean, 2);
+	}
+	var = var/size;
+
+	// Output the values here
+	printf("The mean is: %f \n", mean);
+	printf("The variance is: %f \n", var);
+
+	return 0;
+}
+
+

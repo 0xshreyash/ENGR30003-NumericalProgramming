@@ -1,0 +1,15 @@
+21:06:57 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../dynamic-array.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"dynamic-array.d" -MT"dynamic-array.o" -o "dynamic-array.o" "../dynamic-array.c"
+Finished building: ../dynamic-array.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./dynamic-array.o ./hello-world.o ./static-array.o   
+Finished building target: Hello-World
+ 
+
+21:06:57 Build Finished (took 271ms)
+

@@ -1,0 +1,190 @@
+20:17:30 **** Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../hello-world.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello-world.d" -MT"hello-world.o" -o "hello-world.o" "../hello-world.c"
+Finished building: ../hello-world.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./hello-world.o   
+Finished building target: Hello-World
+ 
+20:21:15 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../hello-world.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello-world.d" -MT"hello-world.o" -o "hello-world.o" "../hello-world.c"
+Finished building: ../hello-world.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./hello-world.o   
+Finished building target: Hello-World
+ 
+20:22:22 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../hello-world.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello-world.d" -MT"hello-world.o" -o "hello-world.o" "../hello-world.c"
+Finished building: ../hello-world.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./hello-world.o   
+Finished building target: Hello-World
+ 
+20:47:15 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../hello-world.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello-world.d" -MT"hello-world.o" -o "hello-world.o" "../hello-world.c"
+Finished building: ../hello-world.c
+ 
+Building file: ../static-array.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"static-array.d" -MT"static-array.o" -o "static-array.o" "../static-array.c"
+Finished building: ../static-array.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./hello-world.o ./static-array.o   
+duplicate symbol _main in:
+    ./hello-world.o
+    ./static-array.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Hello-World] Error 1
+20:47:54 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../hello-world.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello-world.d" -MT"hello-world.o" -o "hello-world.o" "../hello-world.c"
+Finished building: ../hello-world.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./hello-world.o ./static-array.o   
+Finished building target: Hello-World
+ 
+20:49:55 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../hello-world.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello-world.d" -MT"hello-world.o" -o "hello-world.o" "../hello-world.c"
+Finished building: ../hello-world.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./hello-world.o ./static-array.o   
+duplicate symbol _main in:
+    ./hello-world.o
+    ./static-array.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Hello-World] Error 1
+20:54:42 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../dynamic-array.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"dynamic-array.d" -MT"dynamic-array.o" -o "dynamic-array.o" "../dynamic-array.c"
+../dynamic-array.c:15:19: warning: format specifies type 'int *' but the argument has type 'int' [-Wformat]
+        fscanf(fp, "%d", SIZE);
+                    ~~   ^~~~
+../dynamic-array.c:15:19: warning: variable 'SIZE' is uninitialized when used here [-Wuninitialized]
+        fscanf(fp, "%d", SIZE);
+                         ^~~~
+../dynamic-array.c:13:10: note: initialize the variable 'SIZE' to silence this warning
+        int SIZE;
+                ^
+                 = 0
+../dynamic-array.c:38:2: error: expected identifier or '('
+*/
+ ^
+2 warnings and 1 error generated.
+make: *** [dynamic-array.o] Error 1
+20:54:56 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../dynamic-array.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"dynamic-array.d" -MT"dynamic-array.o" -o "dynamic-array.o" "../dynamic-array.c"
+../dynamic-array.c:15:19: warning: format specifies type 'int *' but the argument has type 'int' [-Wformat]
+        fscanf(fp, "%d", SIZE);
+                    ~~   ^~~~
+../dynamic-array.c:15:19: warning: variable 'SIZE' is uninitialized when used here [-Wuninitialized]
+        fscanf(fp, "%d", SIZE);
+                         ^~~~
+../dynamic-array.c:13:10: note: initialize the variable 'SIZE' to silence this warning
+        int SIZE;
+                ^
+                 = 0
+2 warnings generated.
+Finished building: ../dynamic-array.c
+ 
+Building file: ../hello-world.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"hello-world.d" -MT"hello-world.o" -o "hello-world.o" "../hello-world.c"
+Finished building: ../hello-world.c
+ 
+Building file: ../static-array.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"static-array.d" -MT"static-array.o" -o "static-array.o" "../static-array.c"
+Finished building: ../static-array.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./dynamic-array.o ./hello-world.o ./static-array.o   
+Finished building target: Hello-World
+ 
+20:56:40 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../dynamic-array.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"dynamic-array.d" -MT"dynamic-array.o" -o "dynamic-array.o" "../dynamic-array.c"
+../dynamic-array.c:15:19: warning: format specifies type 'int *' but the argument has type 'int' [-Wformat]
+        fscanf(fp, "%d", SIZE);
+                    ~~   ^~~~
+../dynamic-array.c:15:19: warning: variable 'SIZE' is uninitialized when used here [-Wuninitialized]
+        fscanf(fp, "%d", SIZE);
+                         ^~~~
+../dynamic-array.c:13:10: note: initialize the variable 'SIZE' to silence this warning
+        int SIZE;
+                ^
+                 = 0
+2 warnings generated.
+Finished building: ../dynamic-array.c
+ 
+Building file: ../static-array.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"static-array.d" -MT"static-array.o" -o "static-array.o" "../static-array.c"
+Finished building: ../static-array.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./dynamic-array.o ./hello-world.o ./static-array.o   
+Finished building target: Hello-World
+ 
+21:06:18 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../dynamic-array.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"dynamic-array.d" -MT"dynamic-array.o" -o "dynamic-array.o" "../dynamic-array.c"
+Finished building: ../dynamic-array.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./dynamic-array.o ./hello-world.o ./static-array.o   
+Finished building target: Hello-World
+ 
+21:06:57 **** Incremental Build of configuration Debug for project Hello-World ****
+make all 
+Building file: ../dynamic-array.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"dynamic-array.d" -MT"dynamic-array.o" -o "dynamic-array.o" "../dynamic-array.c"
+Finished building: ../dynamic-array.c
+ 
+Building target: Hello-World
+Invoking: Cross GCC Linker
+gcc  -o "Hello-World"  ./dynamic-array.o ./hello-world.o ./static-array.o   
+Finished building target: Hello-World
+ 
